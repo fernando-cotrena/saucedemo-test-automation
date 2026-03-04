@@ -3,9 +3,9 @@ class MercadoLibreService {
     return cy.request({
       method: 'GET',
       url: 'https://www.mercadolibre.com.ar/menu/departments',
-      failOnStatusCode: false
-    });
+      failOnStatusCode: false,
+    })
   }
 }
 
-export const mercadoLibreService = new MercadoLibreService();
+export const mercadoLibreService = new MercadoLibreService()
