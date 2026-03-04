@@ -1,8 +1,10 @@
+const baseUrl = Cypress.env().mercadolibreApiUrl
+
 class MercadoLibreService {
   getDepartments() {
     return cy.request({
       method: 'GET',
-      url: 'https://www.mercadolibre.com.ar/menu/departments',
+      url: `${baseUrl}/menu/departments`,
       failOnStatusCode: false,
     })
   }

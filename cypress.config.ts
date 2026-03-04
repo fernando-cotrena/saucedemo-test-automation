@@ -18,7 +18,8 @@ export default defineConfig({
     specPattern: 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}',
     supportFile: 'cypress/support/e2e.ts',
     env: {
-      environment: 'qa'
+      environment: 'qa',
+      mercadolibreApiUrl: 'https://www.mercadolibre.com.ar'
     }
   },
 });
