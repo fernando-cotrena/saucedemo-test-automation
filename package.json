@@ -1,0 +1,35 @@
+{
+  "name": "saucedemo-test-automation",
+  "version": "1.0.0",
+  "description": "Automation testing framework for SauceDemo covering login and add-to-cart functionalities, including test case design, screenshot on failure, and an intentionally failing test scenario.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "cypress run",
+    "test:qa": "cypress run --env environment=qa",
+    "test:chrome": "cypress run --browser chrome",
+    "test:firefox": "cypress run --browser firefox"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernando-cotrena/saucedemo-test-automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/fernando-cotrena/saucedemo-test-automation/issues"
+  },
+  "homepage": "https://github.com/fernando-cotrena/saucedemo-test-automation#readme",
+  "devDependencies": {
+    "cypress": "^15.11.0",
+    "cypress-mochawesome-reporter": "^4.0.2",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.1.1",
+    "mochawesome-report-generator": "^6.3.2",
+    "typescript": "^5.9.3"
+  }
+}
