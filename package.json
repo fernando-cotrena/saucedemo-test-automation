@@ -1,0 +1,36 @@
+{
+  "name": "saucedemo-test-automation",
+  "version": "1.0.0",
+  "description": "Automation testing framework for SauceDemo covering login and add-to-cart functionalities, including test case design, screenshot on failure, and an intentionally failing test scenario.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run && mochawesome-merge cypress/reports/*.json > cypress/reports/report.json && marge cypress/reports/report.json",
+    "cy:chrome": "cypress run --browser chrome && mochawesome-merge cypress/reports/*.json > cypress/reports/report.json && marge cypress/reports/report.json",
+    "cy:firefox": "cypress run --browser firefox && mochawesome-merge cypress/reports/*.json > cypress/reports/report.json && marge cypress/reports/report.json",
+    "open-report": "open reports/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernando-cotrena/saucedemo-test-automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/fernando-cotrena/saucedemo-test-automation/issues"
+  },
+  "homepage": "https://github.com/fernando-cotrena/saucedemo-test-automation#readme",
+  "devDependencies": {
+    "cypress": "^15.11.0",
+    "cypress-mochawesome-reporter": "^4.0.2",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.1.1",
+    "mochawesome-report-generator": "^6.3.2",
+    "typescript": "^5.9.3"
+  }
+}
